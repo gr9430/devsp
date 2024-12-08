@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Writer's Diary</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <div class="hamburger" onclick="toggleMobileMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="navbar">
+            <div class="dropdown">
+                <a href="#">Authors</a>
+                <div class="dropdown-content">
+                    <a href="author1.html">Author 1</a>
+                    <a href="author2.html">Author 2</a>
+                    <a href="author3.html">Author 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Books</a>
+                <div class="dropdown-content">
+                    <a href="book1.html">Book 1</a>
+                    <a href="book2.html">Book 2</a>
+                    <a href="book3.html">Book 3</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-mobile">
+            <a href="#">Authors</a>
+            <a href="#">Books</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
 
+    <div class="content">
+        <h1>Announcing the Spring 2025 Second Pressing of:</h1>
+        <p><i>Oil Spill</i> by John Hoffman</p>
+        <h2>Preorders</h2>
+        <p>Enter your email address here to be notified when <i>Writer’s Diary</i> is available for preorder.</p>
+        <form action="#" method="POST">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Notify Me</button>
+        </form>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
