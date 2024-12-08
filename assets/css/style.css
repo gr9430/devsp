@@ -1,1 +1,70 @@
+/* General Styles */
+body {
+  background-color: #313131; /* OS Black background */
+  color: #cfcfce; /* OS White text for high contrast */
+  font-family: 'Arial', sans-serif; /* Clean sans-serif font */
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+a {
+  color: #811619;
+  text-decoration: none;
+}
+a:hover {
+  color: #FFFFFF;
+}
+
+/* Headers */
+h1, h2, h3 {
+  color: #811619; /* OS Red for primary headers */
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #313131; /* OS Black for navigation */
+  padding: 10px 20px;
+}
+nav a {
+  color: #cfcfce;
+  margin: 0 15px;
+}
+nav a:hover {
+  color: #811619; /* OS Red highlight on hover */
+}
+
+/* Buttons */
+button {
+  background-color: #811619; /* Red buttons */
+  color: #cfcfce; /* White text */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #cfcfce; /* Invert colors */
+  color: #CC0000;
+}
+
+/* Footer */
+footer {
+  background-color: #313131; /* Dark gray */
+  color: #cfcfce;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
+
+/* Book Page Layout */
+.book-section {
+  border: 1px solid #313131;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #313131; 
+  color: #cfcfce;
+}
+.book-section h2 {
+  color: #CC0000; /* Red section headers */
+}
 
