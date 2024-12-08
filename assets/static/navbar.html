@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #313131; /* OS Black background */
+            color: #cfcfce; /* OS White text for high contrast */
+        }
+        nav {
+            background-color: #313131; /* OS Black for navigation */
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: #cfcfce; /* OS White text */
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav a:hover {
+            color: #811619; /* OS Red on hover */
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #313131; /* OS Black background */
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: #cfcfce; /* OS White text */
+            padding: 12px 16px;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #444444; /* Slightly lighter gray on hover */
+        }
+        .dropdown:hover .dropdown-content {
+            display: block; /* Show dropdown on hover */
+        }
+        .navbar {
+            display: flex;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="navbar">
+            <div class="dropdown">
+                <a href="#">Authors</a>
+                <div class="dropdown-content">
+                    <a href="author1.html">John Hoffman</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Books</a>
+                <div class="dropdown-content">
+                    <a href="book1.html"><i>Oil Spill</i></a>
+                </div>
+            </div>
+        </div>
+        <a href="contact.html">Contact</a>
+    </nav>
+</body>
+</html>
