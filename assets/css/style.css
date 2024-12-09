@@ -269,3 +269,17 @@ footer {
         padding: 20px;
     }
 }
+
+/* CSS Styles for the Banner */
+.banner {
+    text-align: center; /* Centers the content within the banner div */
+    margin: 20px auto; /* Adds vertical spacing and centers the banner */
+    padding: 10px; /* Adds internal spacing within the banner div */
+    background-color: #313131; /* Sets a background color for the banner */
+}
+
+.banner-image {
+    max-width: 100%; /* Ensures the image fits within its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    border-radius: 5px; /* Adds rounded corners to the image */
+}
