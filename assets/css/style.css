@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    background-color: #313131; /* Black background */
+    background-color: #000000; /* Black background */
     color: #cfcfce; /* OS White text for high contrast */
     font-family: 'Arial', sans-serif; /* Clean sans-serif font */
     margin: 0;
@@ -275,11 +275,11 @@ footer {
     text-align: center; /* Centers the content within the banner div */
     margin: 20px auto; /* Adds vertical spacing and centers the banner */
     padding: 10px; /* Adds internal spacing within the banner div */
-    background-color: #313131; /* Sets a background color for the banner */
+    background-color: #000000; /* Sets a background color for the banner */
 }
 
 .banner-image {
-    max-width: 50%; /* Ensures the image fits within its container */
+    max-width: 30%; /* Ensures the image fits within its container */
     height: auto; /* Maintains the aspect ratio of the image */
     border-radius: 5px; /* Adds rounded corners to the image */
 }
