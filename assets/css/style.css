@@ -98,7 +98,7 @@ nav a:hover {
     gap: 20px;
 }
 
-/* Mobile Hamburger Menu (hidden by default) */
+/* Mobile Hamburger Menu */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -115,13 +115,16 @@ nav a:hover {
     background-color: #811619; /* Change to red on hover */
 }
 
-/* Show mobile menu when active */
+/* Mobile Navigation Menu */
 .navbar-mobile {
-    display: none;
+    display: none; /* Default hidden */
     flex-direction: column;
     width: 100%;
     background-color: #313131; /* Same as nav background */
     padding: 10px 0;
+}
+.navbar-mobile.active {
+    display: flex; /* Show menu when active */
 }
 .navbar-mobile a {
     padding: 10px 20px;
@@ -180,18 +183,11 @@ footer {
         display: none; /* Hide regular navbar by default on mobile */
     }
     .navbar-mobile {
-        display: flex; /* Show mobile menu */
+        display: none; /* Initially hidden */
     }
     .dropdown-content {
         position: static; /* Ensure dropdown fits mobile screens */
         box-shadow: none;
         width: 100%;
-    }
-}
-
-/* Hide dropdowns in mobile */
-@media (max-width: 768px) {
-    .dropdown:hover .dropdown-content {
-        display: none; /* Prevent hover-based dropdowns */
     }
 }
