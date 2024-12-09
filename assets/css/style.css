@@ -279,7 +279,7 @@ footer {
 }
 
 .banner-image {
-    max-width: 30%; /* Ensures the image fits within its container */
+    max-width: 50%; /* Ensures the image fits within its container */
     height: auto; /* Maintains the aspect ratio of the image */
     border-radius: 5px; /* Adds rounded corners to the image */
 }
