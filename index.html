@@ -9,7 +9,7 @@
 <body>
     <nav>
         <a href="index.html" class="active">Home</a>
-        <div class="hamburger" onclick="toggleMobileMenu()">
+        <div class="hamburger" aria-controls="navbar-mobile" aria-expanded="false" onclick="toggleMobileMenu()">
             <div></div>
             <div></div>
             <div></div>
@@ -32,15 +32,16 @@
                 </div>
             </div>
         </div>
-        <div class="navbar-mobile">
+        <div class="navbar-mobile" id="navbar-mobile" role="menu">
             <a href="#">Authors</a>
             <a href="#">Books</a>
             <a href="contact.html">Contact</a>
         </div>
     </nav>
 
-    <div class="content">
-        <h1>Announcing the Spring 2025 Second Pressing of:</h1>
+    <div class="container">
+        <h1>Welcome to Writer's Diary</h1>
+        <p>Announcing the Spring 2025 Second Pressing of:</p>
         <p><i>Oil Spill</i> by John Hoffman</p>
         <h2>Preorders</h2>
         <p>Enter your email address here to be notified when <i>Writer’s Diary</i> is available for preorder.</p>
@@ -49,6 +50,21 @@
             <button type="submit">Notify Me</button>
         </form>
     </div>
+
+    <div class="container two-columns">
+        <div class="column">
+            <h2>About the Author</h2>
+            <p>John Hoffman is a celebrated writer whose works include groundbreaking narratives exploring modern life.</p>
+        </div>
+        <div class="column">
+            <h2>About the Book</h2>
+            <p><i>Oil Spill</i> delves into the complexities of environmental and personal recovery in the wake of disaster.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Writer's Diary. All Rights Reserved.</p>
+    </footer>
 
     <script src="assets/js/main.js"></script>
 </body>
