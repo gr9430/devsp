@@ -145,7 +145,7 @@ nav a:hover {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #444444; /* Slightly lighter background for containers */
+    background-color: #000000
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     text-align: center;
@@ -195,7 +195,7 @@ button:hover {
 
 /* Footer */
 footer {
-    background-color: #313131; /* Dark gray */
+    background-color: #000000; /* Dark gray */
     color: #cfcfce;
     text-align: center;
     padding: 15px;
