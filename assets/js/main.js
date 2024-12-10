@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Load Banner
     const bannerPlaceholder = document.querySelector('#banner-placeholder');
     if (bannerPlaceholder) {
-        fetch(`${BASE_PATH}banner.html`)
+        fetch(`${BASE_PATH}assets/images/spbanner.png`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Banner could not be loaded. Status: ${response.status}`);
