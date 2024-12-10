@@ -190,6 +190,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     text-align: center;
+    border: 1px solid #313131; /* Light grey outline for container */
 }
 .container h1 {
     color: #811619; /* OS Red for headers */
