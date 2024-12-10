@@ -79,12 +79,16 @@ p {
 
 /* Navigation Bar */
 nav {
-    background-color: #313131; /* OS Black for navigation */
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    width: 100%; /* Ensures the navbar stretches across the entire page */
+    background-color: #313131; /* Maintain the background color */
+    padding: 10px 20px; /* Adjust padding for spacing */
+    display: flex; /* Align items horizontally */
+    justify-content: space-between; /* Space out items evenly */
+    position: fixed; /* Keeps the navbar at the top of the page */
+    top: 0; /* Ensures it sticks to the top */
+    left: 0; /* Aligns it to the left edge */
+    z-index: 1000; /* Keeps it above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
 }
 nav a {
     color: #cfcfce; /* OS White text */
