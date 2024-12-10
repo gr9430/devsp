@@ -77,6 +77,21 @@ p {
     font-size: 1.5rem; /* Extra large text */
 }
 
+/* CSS Styles for the Banner */
+.banner {
+    text-align: center; /* Centers the content within the banner div */
+    margin: 0 auto; /* Adds vertical spacing and centers the banner */
+    padding: 10px; /* Adds internal spacing within the banner div */
+    background-color: #000000; /* Sets a background color for the banner */
+}
+
+.banner-image {
+    max-width: 40%; /* Ensures the image fits within its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    border-radius: 5px; /* Adds rounded corners to the image */
+    margin: 0 auto;
+}
+
 /* Navigation Bar */
 nav {
     width: 100%; /* Ensures the navbar stretches across the entire page */
@@ -84,10 +99,11 @@ nav {
     padding: 10px 20px; /* Adjust padding for spacing */
     display: flex; /* Align items horizontally */
     justify-content: space-between; /* Space out items evenly */
-    position: fixed; /* Keeps the navbar at the top of the page */
+    position: relative; /* Keeps the navbar following the banner */
+    align-items: center;
     top: 0; /* Ensures it sticks to the top */
     left: 0; /* Aligns it to the left edge */
-    z-index: 1000; /* Keeps it above other content */
+    z-index: 1; /* Stays on top of subsequent content but below banner */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
 }
 nav a {
@@ -272,18 +288,4 @@ footer {
     body {
         padding: 20px;
     }
-}
-
-/* CSS Styles for the Banner */
-.banner {
-    text-align: center; /* Centers the content within the banner div */
-    margin: 20px auto; /* Adds vertical spacing and centers the banner */
-    padding: 10px; /* Adds internal spacing within the banner div */
-    background-color: #000000; /* Sets a background color for the banner */
-}
-
-.banner-image {
-    max-width: 40%; /* Ensures the image fits within its container */
-    height: auto; /* Maintains the aspect ratio of the image */
-    border-radius: 5px; /* Adds rounded corners to the image */
 }
