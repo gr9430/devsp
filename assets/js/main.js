@@ -53,4 +53,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.error('Error loading the banner:', error);
             });
     }
+// Dynamically add the favicon
+function addFavicon() {
+    const link = document.createElement('link');
+    link.rel = 'icon';
+    link.href = 'assets/images/spbanner.ico'; // Update the path to your favicon
+    link.type = 'image/x-icon';
+    document.head.appendChild(link);
+}
+
+// Call the function to add the favicon
+addFavicon();
 });
