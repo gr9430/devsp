@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Load Navbar
     const navbarPlaceholder = document.querySelector('#navbar-placeholder');
     if (navbarPlaceholder) {
-        fetch('assets/html/navbar.html')
+        fetch('navbar.html')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Navbar could not be loaded');
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Load Footer
     const footerPlaceholder = document.querySelector('#footer-placeholder');
     if (footerPlaceholder) {
-        fetch('assets/html/footer.html')
+        fetch('footer.html')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Footer could not be loaded');
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Load Banner
     const bannerPlaceholder = document.querySelector('#banner-placeholder');
     if (bannerPlaceholder) {
-        fetch('assets/html/banner.html')
+        fetch('banner.html')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Banner could not be loaded');
