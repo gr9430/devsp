@@ -44,10 +44,10 @@ nav a:focus, .dropdown-content a:focus {
 /* Navbar */
 nav {
     width: 100%;
-    background-color: #000000; /* Navbar background */
+    background-color: #313131; /* Navbar background */
     padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly; /* Evenly spaced buttons */
     align-items: center;
     position: relative; /* Ensures it flows naturally after the banner */
     z-index: 1;
@@ -55,8 +55,11 @@ nav {
 }
 nav a {
     color: #cfcfce;
-    padding: 10px;
+    padding: 10px 20px; /* Add padding for more clickable area */
     display: block;
+    text-align: center; /* Center align text */
+    flex-grow: 1; /* Allow buttons to grow and distribute evenly */
+    flex-basis: 0; /* Ensure even spacing */
 }
 nav a:hover {
     color: #811619;
@@ -157,10 +160,10 @@ nav a:hover {
 /* Footer */
 footer {
     width: 100%;
-    background-color: #313131;
+    background-color: #000000;
     color: #cfcfce;
     text-align: center;
-    padding: 15px;
+    padding: 25px;
     position: relative;
     bottom: 0;
     font-size: 0.9rem;
@@ -172,7 +175,7 @@ footer {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #313131; /* Slightly lighter background */
+    background-color: #000000; /* Slightly lighter background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     text-align: center;
