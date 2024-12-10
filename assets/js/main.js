@@ -1,15 +1,13 @@
 // JavaScript to dynamically load navbar, footer, and banner
 
-// Adjust base paths for files within the devsp directory
+// Base path for HTML components
 const BASE_PATH = '/devsp/';
 
 document.addEventListener("DOMContentLoaded", () => {
     // Load Navbar
     const navbarPlaceholder = document.querySelector('#navbar-placeholder');
     if (navbarPlaceholder) {
-        const navbarPath = `${BASE_PATH}navbar.html`;
-        console.log(`Fetching Navbar from: ${navbarPath}`);
-        fetch(navbarPath)
+        fetch(`${BASE_PATH}navbar.html`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Navbar could not be loaded. Status: ${response.status}`);
@@ -18,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
             })
             .then(navbarHTML => {
                 navbarPlaceholder.innerHTML = navbarHTML;
-                console.log('Navbar loaded successfully.');
             })
             .catch(error => {
                 console.error('Error loading the navbar:', error);
@@ -28,9 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Load Footer
     const footerPlaceholder = document.querySelector('#footer-placeholder');
     if (footerPlaceholder) {
-        const footerPath = `${BASE_PATH}footer.html`;
-        console.log(`Fetching Footer from: ${footerPath}`);
-        fetch(footerPath)
+        fetch(`${BASE_PATH}footer.html`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Footer could not be loaded. Status: ${response.status}`);
@@ -39,7 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
             })
             .then(footerHTML => {
                 footerPlaceholder.innerHTML = footerHTML;
-                console.log('Footer loaded successfully.');
             })
             .catch(error => {
                 console.error('Error loading the footer:', error);
@@ -49,9 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Load Banner
     const bannerPlaceholder = document.querySelector('#banner-placeholder');
     if (bannerPlaceholder) {
-        const bannerPath = `${BASE_PATH}banner.html`;
-        console.log(`Fetching Banner from: ${bannerPath}`);
-        fetch(bannerPath)
+        fetch(`${BASE_PATH}banner.html`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Banner could not be loaded. Status: ${response.status}`);
@@ -60,7 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
             })
             .then(bannerHTML => {
                 bannerPlaceholder.innerHTML = bannerHTML;
-                console.log('Banner loaded successfully.');
             })
             .catch(error => {
                 console.error('Error loading the banner:', error);
@@ -69,13 +60,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Dynamically add the favicon
     function addFavicon() {
-        console.log('Adding favicon...');
         const link = document.createElement('link');
         link.rel = 'icon';
-        link.href = '/devsp/assets/images/spbanner.ico'; // Update the path to your favicon
+        link.href = `${BASE_PATH}assets/images/spbanner.ico`; // Favicon path
         link.type = 'image/x-icon';
         document.head.appendChild(link);
-        console.log('Favicon added successfully.');
     }
 
     // Call the function to add the favicon
