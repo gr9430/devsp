@@ -1,7 +1,7 @@
 // JavaScript to dynamically load navbar, footer, and banner
 
 // Adjust base paths for files within the devsp directory
-const BASE_PATH = '/devsp/assets/html/';
+const BASE_PATH = '/devsp/';
 
 // JavaScript to dynamically load navbar, footer, and banner
 document.addEventListener("DOMContentLoaded", () => {
