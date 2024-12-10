@@ -44,7 +44,7 @@ nav a:focus, .dropdown-content a:focus {
 /* Navbar */
 nav {
     width: 100%;
-    background-color: #313131; /* Navbar background */
+    background-color: #000000; /* Navbar background */
     padding: 10px 20px;
     display: flex;
     justify-content: space-between; /* Left and right alignment */
@@ -154,10 +154,10 @@ nav a:hover {
     text-align: center;
     margin: 0 auto;
     padding: 10px 0;
-    background-color: #313131; /* Background for banner */
+    background-color: #000000; /* Background for banner */
 }
 .banner-image {
-    max-width: 100%;
+    max-width: 40%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -166,7 +166,7 @@ nav a:hover {
 /* Footer */
 footer {
     width: 100%;
-    background-color: #313131;
+    background-color: #000000;
     color: #cfcfce;
     text-align: center;
     padding: 15px;
@@ -181,7 +181,7 @@ footer {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #444444; /* Slightly lighter background */
+    background-color: #000000; /* Slightly lighter background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     text-align: center;
