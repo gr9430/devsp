@@ -1,9 +1,14 @@
 // JavaScript to dynamically load navbar, footer, and banner
+
+// Adjust base paths for files within the devsp directory
+const BASE_PATH = '/devsp/assets/html/';
+
+// JavaScript to dynamically load navbar, footer, and banner
 document.addEventListener("DOMContentLoaded", () => {
     // Load Navbar
     const navbarPlaceholder = document.querySelector('#navbar-placeholder');
     if (navbarPlaceholder) {
-        fetch('navbar.html')
+        fetch(`${BASE_PATH}navbar.html`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Navbar could not be loaded');
@@ -21,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Load Footer
     const footerPlaceholder = document.querySelector('#footer-placeholder');
     if (footerPlaceholder) {
-        fetch('footer.html')
+        fetch(`${BASE_PATH}footer.html`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Footer could not be loaded');
@@ -39,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Load Banner
     const bannerPlaceholder = document.querySelector('#banner-placeholder');
     if (bannerPlaceholder) {
-        fetch('banner.html')
+        fetch(`${BASE_PATH}banner.html`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Banner could not be loaded');
@@ -53,15 +58,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.error('Error loading the banner:', error);
             });
     }
-// Dynamically add the favicon
-function addFavicon() {
-    const link = document.createElement('link');
-    link.rel = 'icon';
-    link.href = 'assets/images/spbanner.ico'; // Update the path to your favicon
-    link.type = 'image/x-icon';
-    document.head.appendChild(link);
-}
 
-// Call the function to add the favicon
-addFavicon();
+    // Dynamically add the favicon
+    function addFavicon() {
+        const link = document.createElement('link');
+        link.rel = 'icon';
+        link.href = '/devsp/assets/images/spbanner.ico'; // Update the path to your favicon
+        link.type = 'image/x-icon';
+        document.head.appendChild(link);
+    }
+
+    // Call the function to add the favicon
+    addFavicon();
 });
