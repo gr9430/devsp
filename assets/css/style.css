@@ -47,7 +47,7 @@ nav {
     background-color: #313131; /* Navbar background */
     padding: 10px 20px;
     display: flex;
-    justify-content: space-evenly; /* Evenly spaced buttons */
+    justify-content: space-between; /* Left and right alignment */
     align-items: center;
     position: relative; /* Ensures it flows naturally after the banner */
     z-index: 1;
@@ -58,8 +58,14 @@ nav a {
     padding: 10px 20px; /* Add padding for more clickable area */
     display: block;
     text-align: center; /* Center align text */
-    flex-grow: 1; /* Allow buttons to grow and distribute evenly */
-    flex-basis: 0; /* Ensure even spacing */
+}
+nav .home {
+    margin-right: auto; /* Align Home button to the left */
+}
+nav .right-buttons {
+    display: flex;
+    gap: 20px; /* Add spacing between right-aligned buttons */
+    margin-left: auto; /* Align other buttons to the right */
 }
 nav a:hover {
     color: #811619;
@@ -128,7 +134,7 @@ nav a:hover {
     display: none; /* Hidden by default */
     flex-direction: column;
     width: 100%;
-    background-color: #000000;
+    background-color: #313131;
     padding: 10px 0;
 }
 .navbar-mobile.active {
@@ -148,10 +154,10 @@ nav a:hover {
     text-align: center;
     margin: 0 auto;
     padding: 10px 0;
-    background-color: #000000; /* Background for banner */
+    background-color: #313131; /* Background for banner */
 }
 .banner-image {
-    max-width: 40%;
+    max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -160,10 +166,10 @@ nav a:hover {
 /* Footer */
 footer {
     width: 100%;
-    background-color: #000000;
+    background-color: #313131;
     color: #cfcfce;
     text-align: center;
-    padding: 25px;
+    padding: 15px;
     position: relative;
     bottom: 0;
     font-size: 0.9rem;
@@ -175,7 +181,7 @@ footer {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #000000; /* Slightly lighter background */
+    background-color: #444444; /* Slightly lighter background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     text-align: center;
@@ -197,6 +203,7 @@ footer {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid #313131; /* Add border to columns */
 }
 
 /* Single Column */
