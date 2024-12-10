@@ -1,33 +1,4 @@
-// Toggles the mobile navigation menu visibility
-function toggleMobileMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const navbarMobile = document.querySelector('.navbar-mobile');
-    const isActive = navbarMobile.classList.toggle('active'); // Toggles the 'active' class
-    hamburger.setAttribute('aria-expanded', isActive); // Updates the aria-expanded attribute
-}
-
-// JavaScript to load the navbar on each page
-document.addEventListener("DOMContentLoaded", () => {
-    const navbarPlaceholder = document.querySelector('#navbar-placeholder');
-
-    if (navbarPlaceholder) {
-        fetch('assets/html/navbar.html')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Navbar could not be loaded');
-                }
-                return response.text();
-            })
-            .then(navbarHTML => {
-                navbarPlaceholder.innerHTML = navbarHTML;
-            })
-            .catch(error => {
-                console.error('Error loading the navbar:', error);
-            });
-    }
-});
-
-// JavaScript to load the navbar and footer on each page
+// JavaScript to dynamically load navbar, footer, and banner
 document.addEventListener("DOMContentLoaded", () => {
     // Load Navbar
     const navbarPlaceholder = document.querySelector('#navbar-placeholder');
@@ -62,6 +33,24 @@ document.addEventListener("DOMContentLoaded", () => {
             })
             .catch(error => {
                 console.error('Error loading the footer:', error);
+            });
+    }
+
+    // Load Banner
+    const bannerPlaceholder = document.querySelector('#banner-placeholder');
+    if (bannerPlaceholder) {
+        fetch('assets/html/banner.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Banner could not be loaded');
+                }
+                return response.text();
+            })
+            .then(bannerHTML => {
+                bannerPlaceholder.innerHTML = bannerHTML;
+            })
+            .catch(error => {
+                console.error('Error loading the banner:', error);
             });
     }
 });
