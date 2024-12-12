@@ -234,14 +234,6 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal-width columns */
     gap: 20px; /* Space between columns */
-    align-items: center; /* Align columns vertically */
-}
-
-/* Two-Column Layout Without Borders */
-.two-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
-    gap: 20px; /* Space between columns */
     align-items: stretch; /* Ensure both columns stretch to equal height */
 }
 
@@ -259,6 +251,18 @@ p {
     justify-content: flex-start; /* Align items to the top of the container */
     text-align: left; /* Ensure text inside is left-aligned */
 }
+
+/* Center and Control Image Scalability */
+.two-columns .column img {
+    display: block; /* Ensure the image is treated as block */
+    margin: 0 auto 20px; /* Center horizontally and add bottom spacing */
+    max-width: 100%; /* Prevent the image from exceeding the column width */
+    height: auto; /* Maintain the image's aspect ratio */
+    width: 45%; /* Scale image to a specific percentage of column width */
+    border-radius: 5px; /* Optional: Add rounded corners for aesthetics */
+    object-fit: contain; /* Ensures the image scales properly within the container */
+}
+
 
 /* Buttons */
 button {
