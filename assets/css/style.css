@@ -258,7 +258,7 @@ p {
     margin: 0 auto 20px; /* Center horizontally and add bottom spacing */
     max-width: 100%; /* Prevent the image from exceeding the column width */
     height: auto; /* Maintain the image's aspect ratio */
-    width: 60%; /* Adjust the image width for a larger size (increase as needed) */
+    width: 90%; /* Adjust the image width for a larger size (increase as needed) */
     border-radius: 5px; /* Optional: Add rounded corners for aesthetics */
     object-fit: contain; /* Ensures the image scales properly within the container */
 }
