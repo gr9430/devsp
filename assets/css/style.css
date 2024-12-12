@@ -227,7 +227,6 @@ footer {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    border: 1px solid #313131; /* Add border to columns */
     font-size: 1rem; /* Default font size for columns */
     border-left: 1px solid #313131; /* Light grey border between column dividers */
     border-right: 1px solid #313131;
