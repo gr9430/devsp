@@ -237,6 +237,14 @@ p {
     align-items: center; /* Align columns vertically */
 }
 
+/* Two-Column Layout Without Borders */
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    gap: 20px; /* Space between columns */
+    align-items: stretch; /* Ensure both columns stretch to equal height */
+}
+
 .two-columns .column {
     background-color: #000000; /* Black background */
     padding: 20px;
@@ -248,15 +256,8 @@ p {
     display: flex; /* Enable flexbox for alignment */
     flex-direction: column; /* Stack content vertically */
     align-items: center; /* Horizontally center content */
-    justify-content: center; /* Vertically center content */
+    justify-content: flex-start; /* Align items to the top of the container */
     text-align: left; /* Ensure text inside is left-aligned */
-}
-
-.two-columns .column img {
-    display: block; /* Ensure the image is treated as block */
-    margin: 0 auto 20px; /* Center horizontally and add bottom spacing */
-    max-width: 100%; /* Prevent image from overflowing container */
-    height: auto; /* Maintain image aspect ratio */
 }
 
 /* Buttons */
