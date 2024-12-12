@@ -219,6 +219,11 @@ footer {
     font-size: 1.6rem; /* Smaller font for H3 */
 }
 
+/* Left-Justified Text */
+.left-justified {
+    text-align: left; /* Align text to the left */
+}
+
 /* Two-Column Layout Without Borders */
 .two-columns {
     display: grid;
@@ -238,6 +243,7 @@ footer {
     flex-direction: column; /* Stack content vertically */
     align-items: center; /* Horizontally center content */
     justify-content: flex-start; /* Keep content aligned at the top */
+    text-align: left; /* Ensure all text is left-aligned in columns */
 }
 
 /* Center Only the Image */
