@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         link.href = `${BASE_PATH}assets/images/spbanner.ico`; // Use absolute path for favicon
         link.type = 'image/x-icon';
         document.head.appendChild(link);
+        console.log(`Favicon path: ${link.href}`);
         console.log('Favicon added successfully.');
     }
 
