@@ -219,9 +219,14 @@ footer {
     font-size: 1.6rem; /* Smaller font for H3 */
 }
 
-/* Left-Justified Text */
-.left-justified {
-    text-align: left; /* Align text to the left */
+/* Typography */
+p {
+    margin-bottom: 15px; /* Add spacing between paragraphs */
+}
+
+.book-title {
+    font-style: italic; /* Italicize book titles */
+    color: #811619; /* Optional: Emphasize with red color */
 }
 
 /* Two-Column Layout Without Borders */
@@ -247,7 +252,6 @@ footer {
     text-align: left; /* Ensure text inside is left-aligned */
 }
 
-/* Center Image and Ensure Responsiveness */
 .two-columns .column img {
     display: block; /* Ensure the image is treated as block */
     margin: 0 auto 20px; /* Center horizontally and add bottom spacing */
@@ -255,15 +259,10 @@ footer {
     height: auto; /* Maintain image aspect ratio */
 }
 
-/* Single Column */
-.single-column {
-    display: block;
-}
-
 /* Buttons */
 button {
     background-color: #811619;
-    color: #cfcfce;
+    color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -275,4 +274,11 @@ button {
 button:hover {
     background-color: #cfcfce;
     color: #811619;
+}
+
+input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #313131;
+    border-radius: 5px;
 }
