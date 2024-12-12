@@ -216,6 +216,7 @@ footer {
 }
 
 /* Two-Column Layout Without Borders */
+/* Two-Column Layout Without Borders */
 .two-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -230,6 +231,16 @@ footer {
     font-size: 1rem; /* Default font size */
     color: #cfcfce; /* OS White text */
     border: none; /* Completely remove borders */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Horizontally center content */
+    justify-content: flex-start; /* Keep content aligned at the top */
+}
+
+/* Center Only the Image */
+.two-columns .column img {
+    display: block; /* Ensure image is treated as block */
+    margin: 0 auto; /* Center horizontally */
 }
 
 /* Responsive Design for Smaller Screens */
