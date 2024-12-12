@@ -160,7 +160,7 @@ nav a:hover {
     background-color: #000000; /* Background for banner */
 }
 .banner-image {
-    width: 40%; /* Default size */
+    width: 25%; /* Default size */
     height: auto;
     max-width: 100%; /* Ensure it doesn't overflow */
     display: block;
