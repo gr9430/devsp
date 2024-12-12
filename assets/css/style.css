@@ -227,10 +227,11 @@ footer {
 /* Two-Column Layout Without Borders */
 .two-columns {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
     gap: 20px; /* Space between columns */
-    align-items: start;
+    align-items: center; /* Align columns vertically */
 }
+
 .two-columns .column {
     background-color: #000000; /* Black background */
     padding: 20px;
@@ -239,17 +240,19 @@ footer {
     font-size: 1rem; /* Default font size */
     color: #cfcfce; /* OS White text */
     border: none; /* Completely remove borders */
-    display: flex; /* Enable flexbox */
+    display: flex; /* Enable flexbox for alignment */
     flex-direction: column; /* Stack content vertically */
     align-items: center; /* Horizontally center content */
-    justify-content: flex-start; /* Keep content aligned at the top */
-    text-align: left; /* Ensure all text is left-aligned in columns */
+    justify-content: center; /* Vertically center content */
+    text-align: left; /* Ensure text inside is left-aligned */
 }
 
-/* Center Only the Image */
+/* Center Image and Ensure Responsiveness */
 .two-columns .column img {
-    display: block; /* Ensure image is treated as block */
-    margin: 0 auto; /* Center horizontally */
+    display: block; /* Ensure the image is treated as block */
+    margin: 0 auto 20px; /* Center horizontally and add bottom spacing */
+    max-width: 100%; /* Prevent image from overflowing container */
+    height: auto; /* Maintain image aspect ratio */
 }
 
 /* Single Column */
