@@ -216,21 +216,52 @@ footer {
 }
 
 /* Two-Column Layout */
+/* Two-Column Layout */
 .two-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 20px; /* Space between columns */
     align-items: start;
+    position: relative;
 }
 .two-columns .column {
-    background-color: #000000;
+    background-color: #000000; /* Black background */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    border: 1px solid #000000; /* Add border to columns */
-    font-size: 1rem; /* Default font size for columns */
-    border-left: 1px solid #313131; /* Light grey border between column dividers */
-    border-right: 1px solid #313131;
+    font-size: 1rem;
+    color: #cfcfce; /* OS White text */
+}
+.two-columns .column:first-child {
+    border-right: 1px solid #cfcfce; /* Add border only to the right of the first column */
+}
+.two-columns .column:last-child {
+    border-left: none; /* No left border for the last column */
+}
+
+/* Optional Center Divider */
+.two-columns::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%; /* Center divider */
+    width: 1px;
+    background-color: #cfcfce; /* Light grey for divider */
+    z-index: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .two-columns {
+        grid-template-columns: 1fr;
+    }
+    .two-columns .column {
+        border: none; /* Remove borders in single-column mode */
+    }
+    .two-columns::before {
+        display: none; /* Hide divider in single-column mode */
+    }
 }
 
 /* Single Column */
