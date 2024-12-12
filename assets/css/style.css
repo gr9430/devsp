@@ -162,10 +162,17 @@ nav a:hover {
     background-color: #000000; /* Background for banner */
 }
 .banner-image {
-    max-width: 40%;
+    width: 40%; /* Default size */
     height: auto;
+    max-width: 100%; /* Ensure it doesn't overflow */
     display: block;
     margin: 0 auto;
+}
+
+@media (max-width: 768px) { /* For smaller screens */
+    .banner-image {
+        width: 70%; /* Resize to 70% for better fit */
+    }
 }
 
 /* Footer */
