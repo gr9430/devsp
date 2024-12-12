@@ -22,6 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 .then(htmlContent => {
                     console.log(`${componentName} content loaded successfully.`);
                     placeholder.innerHTML = htmlContent;
+
+                    // Initialize any dynamically loaded components
+                    if (componentName === 'Navbar') {
+                        initializeNavbar();
+                    }
                 })
                 .catch(error => {
                     console.error(`Error loading the ${componentName}:`, error);
@@ -53,4 +58,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Call the function to add the favicon
     addFavicon();
+
+    // Function to initialize navbar functionality
+    function initializeNavbar() {
+        console.log('Initializing navbar functionality...');
+
+        // Toggle mobile menu
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.getElementById('navbar-mobile');
+
+        if (hamburger && mobileMenu) {
+            hamburger.addEventListener('click', () => {
+                const isExpanded = mobileMenu.getAttribute('aria-expanded') === 'true';
+                mobileMenu.setAttribute('aria-expanded', !isExpanded);
+                mobileMenu.classList.toggle('active');
+                console.log(`Mobile menu ${isExpanded ? 'closed' : 'opened'}`);
+            });
+        } else {
+            console.warn('Hamburger or mobile menu not found.');
+        }
+    }
 });
