@@ -1,27 +1,36 @@
 <nav>
-    <a href="index.html" class="active">Home</a>
+    <!-- Home Link -->
+    <a href="/devsp/index.html" class="active">Home</a>
+
+    <!-- Hamburger Menu for Mobile -->
     <div class="hamburger" aria-controls="navbar-mobile" aria-expanded="false" onclick="toggleMobileMenu()">
         <div></div>
         <div></div>
         <div></div>
     </div>
+
+    <!-- Desktop Navbar -->
     <div class="navbar">
+        <!-- Authors Dropdown -->
         <div class="dropdown">
             <a href="#">Authors</a>
             <div class="dropdown-content">
-                <a href="authors/john.html">John Hoffman</a>
+                <a href="/devsp/authors/john.html">John Hoffman</a>
             </div>
         </div>
+        <!-- Books Dropdown -->
         <div class="dropdown">
             <a href="#">Books</a>
             <div class="dropdown-content">
-              <a href="books/oilspill.html">Oil Spill</a>
+                <a href="/devsp/books/oilspill.html">Oil Spill</a>
             </div>
         </div>
     </div>
+
+    <!-- Mobile Navbar -->
     <div class="navbar-mobile" id="navbar-mobile" role="menu">
-        <a href="#">Authors</a>
-        <a href="#">Books</a>
-        <a href="#">Contact</a>
+        <a href="/devsp/authors/john.html">Authors</a>
+        <a href="/devsp/books/oilspill.html">Books</a>
+        <a href="/devsp/contact.html">Contact</a>
     </div>
 </nav>
