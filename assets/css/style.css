@@ -267,3 +267,21 @@ input[type="email"] {
         text-align: center; /* Center content for better alignment */
     }
 }
+
+/* Shop Button */
+.shop-button {
+    background-color: #811619; /* OS Red */
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 10px; /* Add spacing from other elements */
+}
+.shop-button:hover {
+    background-color: #cfcfce; /* Light background */
+    color: #811619; /* OS Red text */
+}
