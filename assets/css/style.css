@@ -269,3 +269,13 @@ input[type="email"] {
     border: 1px solid #313131;
     border-radius: 5px;
 }
+
+/* Responsive Design: Single Column on Mobile */
+@media (max-width: 768px) {
+    .two-columns {
+        grid-template-columns: 1fr; /* Change to single column */
+    }
+    .two-columns .column {
+        text-align: center; /* Center content for better alignment */
+    }
+}
