@@ -197,27 +197,16 @@ footer {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #000000; /* Slightly lighter background */
+    background-color: #000000;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     text-align: center;
-    border: 1px solid #000000; /* Light grey outline for container */
 }
-.container h1 {
-.container h1, .container h2 {
+.container h1,
+.container h2 {
     color: #811619; /* OS Red for headers */
     margin-bottom: 20px;
     font-size: 2rem; /* Large font for H1 */
-}
-.container h2 {
-    color: #811619;
-    margin-bottom: 20px;
-    font-size: 1.8rem; /* Slightly smaller font for H2 */
-}
-.container h3 {
-    color: #811619;
-    margin-bottom: 20px;
-    font-size: 1.6rem; /* Smaller font for H3 */
 }
 
 /* Typography */
@@ -239,30 +228,22 @@ p {
 }
 
 .two-columns .column {
-    background-color: #000000; /* Black background */
+    background-color: #000000;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Optional subtle shadow */
-    font-size: 1rem; /* Default font size */
-    color: #cfcfce; /* OS White text */
-    border: none; /* Completely remove borders */
-    display: flex; /* Enable flexbox for alignment */
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Horizontally center content */
-    justify-content: flex-start; /* Align items to the top of the container */
-    text-align: left; /* Ensure text inside is left-aligned */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
 }
-
-/* Center and Control Image Scalability */
 .two-columns .column img {
-    display: block; /* Ensure the image is treated as block */
-    margin: 0 auto 20px; /* Center horizontally and add bottom spacing */
-    max-width: 100%; /* Prevent the image from exceeding the column width */
-    max-width: 90%; /* Prevent the image from exceeding the column width */
-    height: auto; /* Maintain the image's aspect ratio */
-    width: 90%; /* Adjust the image width for a larger size (increase as needed) */
-    border-radius: 5px; /* Optional: Add rounded corners for aesthetics */
-    object-fit: contain; /* Ensures the image scales properly within the container */
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 5px;
 }
 
 /* Buttons */
