@@ -285,3 +285,6 @@ input[type="email"] {
     background-color: #cfcfce; /* Light background */
     color: #811619; /* OS Red text */
 }
+.shop-button.mobile {
+    margin-top: 10px; /* Add spacing for mobile display */
+}
